@@ -1,23 +1,49 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import './Menu.css';
+import Search from './Search';
+import PanelAdd from './PanelAdd';
 
-function Menu(props) {
-  return (
-    <div className="container">
-      <div className="subcontainer">
-        <div className="logo">
-          {props.title}
-        </div>
+class Menu extends React.Component{
 
-        <div className="search">
+    constructor(props){
+        super(props);
+        this.state = {newItemPanel: false};
 
-        </div>
+        this.add = this.add.bind(this);
+        this.onCancel = this.onCancel.bind(this);
+    }
 
-        <div className="actions">
+    add(){
+     this.setState({newItemPanel: true});   
+    }
 
-        </div>
-      </div>
-    </div>
-  );
+    onCancel(){
+        this.setState({newItemPanel: false});   
+    }
+
+
+    render(){
+        return(
+            <div className="container">
+                <div className="subcontainer">
+                    <div className="logo">{this.props.title}</div>
+                    <div className="search">
+                        <Search onsearch={this.props.onsearch} />
+                    </div>
+                    <div className="actions">
+                        <button onClick={this.add} className="button btn-blue">+ Nueva Reservación</button>
+                    </div>
+                    <h3 className="title3">Nosotros</h3>               
+                    <h4 className="title4">Contacto</h4>
+                </div>
+                {(this.state.newItemPanel)?
+                 <PanelAdd onhide={this.onCancel} onadd={this.props.onadd} />
+                 : 
+                 ''
+                 }
+            </div>
+        );
+    }
 }
 
 export default Menu;

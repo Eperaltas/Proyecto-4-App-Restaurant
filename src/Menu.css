@@ -1,7 +1,6 @@
 .container{
-    background-color: rgb(19, 42, 71);
-    color: white;
-    border-bottom: solid 1px #ccc;
+    background-color: rgba(10, 0, 0, 0.966);
+    border-bottom: solid 1px whitesmoke;
     padding: 10px;
     margin: 0 auto;
 }
@@ -14,7 +13,7 @@
     vertical-align: middle;
 }
 .logo{
-    color: #fff;
+    color: rgb(201, 133, 7);
     font-weight: bolder;
     font-size: 22px;
     width: 100px;
@@ -59,4 +58,14 @@
 }
 .new-item-panel p{
     padding: 5px 0;
+}
+.title3{
+    color:white;
+    display: flex;
+    padding-left: 94%;
+}
+.title4{
+    color:whitesmoke;
+    display: flex;
+    padding-left: 94%;
 }

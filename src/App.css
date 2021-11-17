@@ -19,10 +19,18 @@
   margin-right: 5px;
 }
 .btn-blue{
-  background-color:rgb(78, 127, 232);
-  color: white;
+  background-color:rgb(201, 133, 7);
+  color: black;
 }
 .btn-normal{
-  background-color:rgb(255, 255, 255);
-  color: rgb(82, 82, 82);
+  background-color:rgb(8, 0, 0);
+  color: whitesmoke;
+}
+.title1{
+  font-weight: bold;
+  color:red;
+}
+.text1{
+  font-weight: lighter;
+  color:black;
 }
