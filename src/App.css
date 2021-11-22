@@ -36,3 +36,15 @@
   font-weight: lighter;
   color:black;
 }
+
+@media (min-width: 1051px)  {
+  .item { width: 20%; }
+}
+
+@media (max-width: 1050px) and (min-width: 601px)  {
+  .item { width: 35%; }
+}
+
+@media (max-width: 600px) {
+  .item { width: 50%; }
+}
