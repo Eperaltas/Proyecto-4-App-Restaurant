@@ -29,6 +29,8 @@
 .title1{
   font-weight: bold;
   color:red;
+  display: flex;
+  justify-content: center;
 }
 .text1{
   font-weight: lighter;

@@ -64,7 +64,7 @@ class App extends React.Component{
 
   remove(id){
     var temp = [...this.state.mesas];
-    const res = temp.filter(item => item.id != id);
+    const res = temp.filter(item => item.id !== id);
     this.setState({mesas: [...res]});
     this.initMesas();
   }
@@ -84,10 +84,13 @@ class App extends React.Component{
     return (
       <div className="app">
         <Menu title="Fleck Fries" onsearch={this.onSearch} onadd={this.addItem} />
-        <h1 className="title1">Las mejores papas fritas de la ciudad.</h1>
+        <h1 className="title1">LAS MEJORES PAPAS FRITAS DE LA CIUDAD.</h1>
         <h2 className="text1">Desde Holanda para México, las mejores papas fritas
         en la ciudad, con un toque mexicano. Con diferentes tipos de salsas para complementar
         el sabor único en este snack que está en boca de todos.</h2>
+        
+        <div className="image"><img src={'img/' + this.state.image} width="100%" /></div>
+
         <List className="list" items={this.state.copyMesas} onremove={this.remove} onupdaterating={this.updateRating} />
       </div>
     );

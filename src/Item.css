@@ -7,7 +7,7 @@
     vertical-align: top;
 }
 .item .image img{
-    height: 330px;
+    height: 230px;
 }
 
 .item .title{
@@ -18,7 +18,7 @@
 
 .item .actions{
     width: 100%;
-    border-top: solid 1px rgb(201, 133, 7);;
+    border-top: solid 1px rgb(141, 141, 141);;
     padding: 5px 0;
     margin-top: 10px;
 }
@@ -32,4 +32,3 @@
     padding: 5px;
     width: 100%;
 }
-
