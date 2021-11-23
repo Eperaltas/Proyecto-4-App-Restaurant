@@ -1,5 +1,20 @@
 .list{
+    display:inline-block;
+}
+
+.list{
     width: 1100px;
     margin: 0 auto;
     background-color: rgba(201, 133, 7, 0.966);
 }
+@media (min-width: 1051px)  {
+    .list { width: 100%; }
+  }
+  
+  @media (max-width: 1050px) and (min-width: 601px)  {
+    .list { width: 100%; }
+  }
+  
+  @media (max-width: 600px) {
+    .list { width: 180%; }
+  }

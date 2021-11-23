@@ -91,17 +91,32 @@ class App extends React.Component {
   render() {
     return (
       <Router>
+        <div className="container mt-5">
+          <div className="btn-group">
+            <Link to="/inicio" className="btn btn-dark">
+            Inicio
+            </Link>
+            <Link to="/nosotros" className="btn btn-dark">
+            Nosotros
+            </Link>
+            <Link to="/contacto" className="btn btn-dark">
+            Contacto
+            </Link>
+            </div>
+          </div>
+          <hr />
         <Switch>
-          <Route path="/" exact>
+          <Route path="/inicio" exact>
             <Inicio />
-          </Route>
-          <Route path="/contacto">
-            <Contacto />
           </Route>
           <Route path="/nosotros">
             <Nosotros />
           </Route>
+          <Route path="/contacto">
+            <Contacto />
+          </Route>
         </Switch>
+        
         <div className="app">
 
           <Menu title="Fleck Fries" onsearch={this.onSearch} onadd={this.addItem} />

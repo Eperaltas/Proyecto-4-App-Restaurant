@@ -33,8 +33,6 @@ class Menu extends React.Component{
                     <div className="actions">
                         <button onClick={this.add} className="button btn-blue">+ Nueva Reservación</button>
                     </div>
-                    <h3 className="title3">Nosotros</h3>               
-                    <h4 className="title4">Contacto</h4>
                 </div>
                 {(this.state.newItemPanel)?
                  <PanelAdd onhide={this.onCancel} onadd={this.props.onadd} />

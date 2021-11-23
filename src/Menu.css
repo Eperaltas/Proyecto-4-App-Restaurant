@@ -15,12 +15,12 @@
 .logo{
     color: rgb(201, 133, 7);
     font-weight: bolder;
-    font-size: 22px;
+    font-size: 25px;
     width: 100px;
 }
 
 .search{
-    width: 500px;
+    width: 480px;
 }
 
 .search input{
@@ -51,7 +51,7 @@
 }
 
 .new-item-panel{
-    width: 300px;
+    width: 400px;
     margin: 20px auto;
     background-color: white;
     padding: 20px;
@@ -69,3 +69,4 @@
     display: flex;
     padding-left: 94%;
 }
+  
