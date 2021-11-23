@@ -11,6 +11,7 @@ import {
 import Inicio from './components/Inicio';
 import Contacto from './components/Contacto';
 import Nosotros from './components/Nosotros';
+import User from './components/User';
 
 class App extends React.Component {
 
@@ -106,6 +107,9 @@ class App extends React.Component {
           </div>
           <hr />
         <Switch>
+          <Route path="/nosotros/:id">
+            <User />
+          </Route>
           <Route path="/inicio" exact>
             <Inicio />
           </Route>
