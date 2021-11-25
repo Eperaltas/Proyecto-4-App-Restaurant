@@ -131,7 +131,7 @@ class App extends React.Component {
             en la ciudad, con un toque mexicano. Con diferentes tipos de salsas para complementar
             el sabor único en este snack que está en boca de todos.</h2>
 
-          <div className="image"><img src={'img/' + this.state.image} width="100%" /></div>
+          <div className="image"><img alt=""src={'img/' + this.state.image} width="100%" /></div>
 
           <List className="list" items={this.state.copyMesas} onremove={this.remove} onupdaterating={this.updateRating} />
         </div>

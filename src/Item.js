@@ -45,7 +45,7 @@ class Item extends React.Component{
     render(){
         return(
             <div className="item">
-                <div className="image"><img src={'img/' + this.state.image} width="100%" /></div>
+                <div className="image"><img alt=""src={'img/' + this.state.image} width="100%" /></div>
                 <div className="title">{this.state.title}</div>
                 <div className="rating">
                     <p>
