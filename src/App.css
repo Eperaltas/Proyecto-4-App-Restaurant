@@ -31,8 +31,10 @@
   color:red;
   display: flex;
   justify-content: center;
+  font-style: oblique;
 }
 .text1{
   font-weight: lighter;
   color:black;
+  font-style:oblique;
 }

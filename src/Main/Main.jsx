@@ -23,7 +23,7 @@ function Main () {
   console.log('%c Renderizando', 'color:red;')
   console.log('reservaciones', reservaciones)
   return <div>
-    Hola soy main
+    Bienvenidos
     </div>
 }
 

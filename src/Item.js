@@ -50,7 +50,7 @@ class Item extends React.Component{
                 <div className="rating">
                     <p>
                     {this.state.stars.map(x =>
-                        <img src='img/star.png' width='32' />
+                        <img alt="" src='img/star.png' width='32' />
                     )}
                     </p>
                     Personas: 
